@@ -43,24 +43,6 @@ app.get('/help', (req, res) => {
   })
 });
 
-// app.get('', (req, res) => {
-//   res.send('<h1>Home</h1>');
-// });
-
-// app.get('/help',(req, res) => {
-//   res.send([{
-//     name: 'Tao',
-//     age: 27
-//   }, {
-//     name: 'Tom',
-//     age: 35
-//   }]);
-// });
-
-// app.get('/about', (req, res) => {
-//   res.send('<h1>About</h1>');
-// });
-
 app.get('/weather', (req, res) => {
   if (!req.query.address) {
     return res.send({
